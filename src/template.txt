@@ -1,0 +1,20 @@
+const MongoClient = require('mongodb').MongoClient;
+
+const url = 'mongodb://localhost:27017';
+const dbName = 'myProject';
+
+MongoClient.connect(url, function(err, db) {
+  if (err) throw err;
+  console.log('Connected to the database!');
+
+  const dbo = db.db(dbName);
+
+  // Display all data in the 'users' collection
+  dbo.collection('users').find({}).toArray(function(err, result) {
+    if (err) throw err;
+    console.log(result);
+
+    // Close the connection
+    db.close();
+  });
+});
