@@ -1,4 +1,11 @@
-# React + TypeScript + Vite
+# About
+
+This app will help you to keep track of the birds that you have spotted in Colorado.
+
+When it is done, it will provide a checklist with generic pictures of birds that you wish to see in an area.
+It will also provide a list of birds that you have already seen, with your uploaded photos.
+
+# React + TypeScript + Vite + MongoDB
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
